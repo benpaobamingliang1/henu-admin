@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.henu.admin.mappper.PurseMapper">
+    <!--    public Purse getPurse(long id);-->
+    <select id="getPurse" resultType="com.henu.admin.bean.Purse">
+         select * from purse where id = #{id}
+    </select>
+</mapper>
